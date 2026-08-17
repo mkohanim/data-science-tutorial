@@ -14,7 +14,6 @@
 ## What's here
 
 - `modules/` — the course itself, one folder per module (`1-Setup/` through `10-Capstone/`). Each folder holds that module's doc, any artifacts it needs (data files, skeleton `.py` code — e.g. `modules/4-Data/devices_log.tsv`, the real device event log, see [modules/4-Data/description.md](modules/4-Data/description.md) for column details), and your `answers.md`.
-- `notebooks/` — put your exploration notebook(s) here.
 
 ## Instructions
 
@@ -29,4 +28,10 @@ Work through `modules/` in order — don't skip ahead. For each module:
 3. **Commit it.** `git add modules/<N-Name>/answers.md` and commit before moving to the next module — that write-up is what makes your progress checkable later.
 
 A blank or missing `answers.md` for a module means that module isn't done yet, regardless of what code exists elsewhere.
+
+## Where to start
+
+You don't have this repo cloned yet, so start by reading **[modules/1-Setup/setup.md](modules/1-Setup/setup.md) in your browser** — on GitHub, wherever this link was shared with you. Setup walks you through installing Python, Git, and VS Code, and cloning this repo (Step 7) — none of that can happen inside VS Code, because you don't have VS Code yet.
+
+Once you've cloned the repo and opened it in VS Code (the second half of Step 7 onward), switch over to VS Code for everything else: finish the rest of Setup, write your answers into `modules/1-Setup/answers.md`, and commit and push it from VS Code's integrated terminal (`git add`, `git commit`, `git push`). Every module after that — reading, coding, answering, committing — happens inside VS Code.
 
