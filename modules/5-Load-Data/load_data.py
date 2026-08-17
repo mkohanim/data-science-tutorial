@@ -1,5 +1,5 @@
 """
-Module 3 starter: load and clean the real device event log.
+Loading & cleaning skeleton for the real device event log.
 
 This is real exported data, not simulated — it's messy in realistic ways.
 Fill in each function. Nothing here runs correctly yet on purpose.
@@ -8,7 +8,7 @@ Fill in each function. Nothing here runs correctly yet on purpose.
 import pandas as pd
 
 
-def load_raw_log(path: str = "data/devices_log.tsv") -> pd.DataFrame:
+def load_raw_log(path: str = "modules/4-Data/devices_log.tsv") -> pd.DataFrame:
     """
     Load the tab-separated log file into a DataFrame.
 
@@ -38,8 +38,8 @@ def drop_noise_rows(df: pd.DataFrame) -> pd.DataFrame:
     The raw log has some rows that aren't useful, e.g. device == '0' with
     control == 'null'. Decide what counts as noise and filter it out.
 
-    TODO: implement. Document your filtering decisions in NOTES.md —
-    there's no single right answer here.
+    TODO: implement. Document your filtering decisions in this module's
+    answers.md — there's no single right answer here.
     """
     raise NotImplementedError
 
@@ -48,7 +48,7 @@ def filter_by_control(df: pd.DataFrame, control_type: str) -> pd.DataFrame:
     """
     Return only rows matching a given Control type (e.g. 'Current Power Used',
     'Status', 'Cool Setpoint'). Useful once you've picked which control type
-    you're hunting anomalies in (see Module 2).
+    you're hunting anomalies in.
 
     TODO: implement.
     """
